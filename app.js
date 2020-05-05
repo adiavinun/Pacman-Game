@@ -56,10 +56,12 @@ var intervalStrawberry;
 cherry.id = 500;
 strawberry.id = 600;
 var blocked;
-var isMeut =false;
+var isMeut = false;
 var disapeerBoom = new Object();
 disapeerBoom.i = null;
 disapeerBoom.j = null;
+shape.i = null;
+shape.j = null;
 
 var intervalBoom;
 
@@ -631,7 +633,9 @@ function UpdateNextStepMonster(monster) {
 	}
 
 function UpdatePosition() {
-	board[shape.i][shape.j] = 0;
+	if(shape.i != null && shape.j != null){
+		board[shape.i][shape.j] = 0;
+	}
 	var x = GetKeyPressed();
 	if (x == 1) {
 		if (shape.j > 0 && board[shape.i][shape.j - 1] != 4) {
