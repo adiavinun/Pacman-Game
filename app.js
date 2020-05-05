@@ -58,6 +58,9 @@ strawberry.id = 600;
 var blocked;
 var isMeut =false;
 var disapeerBoom = new Object();
+disapeerBoom.i = null;
+disapeerBoom.j = null;
+
 var intervalBoom;
 
 /*$(document).ready(function() {
@@ -410,7 +413,9 @@ function Draw() {
 }
 
 function moveBoom() {
-	board[disapeerBoom.i][disapeerBoom.j] = 0;
+	if (disapeerBoom.i != null && disapeerBoom.j){
+		board[disapeerBoom.i][disapeerBoom.j] = 0;
+	}
 }
 
 function monstersMove() {
