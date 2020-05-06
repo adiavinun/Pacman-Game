@@ -415,7 +415,7 @@ function Draw() {
 }
 
 function moveBoom() {
-	if (disapeerBoom.i != null && disapeerBoom.j){
+	if (disapeerBoom.i != null && disapeerBoom.j!=null){
 		board[disapeerBoom.i][disapeerBoom.j] = 0;
 	}
 }
