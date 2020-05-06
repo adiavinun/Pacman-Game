@@ -154,7 +154,7 @@ $(document).ready(function(){
 	});
 
 	$.validator.addMethod("checkIfOnlyLetters", function(value , element) {
-		return this.optional(element) || /[A-Za-z]/i.test(value);
+		return this.optional(element) || /^[a-z][a-z\s]*$/.test(value);
 	});
 
 	/*$("#submitForm").click(function(e){
