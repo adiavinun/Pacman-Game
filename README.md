@@ -3,8 +3,8 @@
 This game was created as part of the course Development Environments
 
 ## Developers:
-  * Adi Avinun - 313957409
-  * Nicole Dezoraive - 313584294
+  * Adi Avinun
+  * Nicole Dezoraive
 
 
 ## Demo:
