@@ -1,7 +1,5 @@
 # Pacman Game
 
-This game was created as part of the course Development Environments
-
 ## Developers:
   * Adi Avinun
   * Nicole Dezoraive
